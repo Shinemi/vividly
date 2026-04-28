@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+
+:root{
+    --dark: #252525;
+    --orange: #FF7800;
+    --mustard: #ffae00;
+    --black: #000;
+    --white: #fff;
+    --Shrikhand: "Shrikhand";
+    --roboto: "Roboto";
+}
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark);
+
+    &:hover{
+        color: var(--mustard);
+        transition: all 0.2s ease;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.Shrikhand{
+    font-family: var(--Shrikhand);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+header{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 75px;
+}
+
+header .logo:hover{
+    color: var(--black);
+}
+
+ ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+nav{
+    display: none;
+}
+
+header i{
+    position: absolute;
+    right: 10px;
+}
+
+footer {
+    background-color: var(--dark);
+    height: 200px;
+    justify-content: center; 
+    flex-direction: column;
+    
+}
+
+footer a{
+    color: var(--white);
+}
+
+footer ul{
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+footer div{
+    margin-left: 10px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 24px;
+}
