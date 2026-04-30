@@ -38,11 +38,16 @@ a{
 .logo{
     font-size: 30px;
     font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+      transform: translate(-50%, -50%);
+
 }
 
 header{
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     position: relative;
     height: 75px;
 }
@@ -58,11 +63,11 @@ header .logo:hover{
 
 nav{
     display: none;
+    margin-right: 200px;
 }
 
 header i{
-    position: absolute;
-    right: 10px;
+    margin-right: 20px;
 }
 
 footer {
@@ -71,6 +76,10 @@ footer {
     justify-content: center; 
     flex-direction: column;
     
+}
+
+footer .logo{
+    position: static;
 }
 
 footer a{
@@ -128,8 +137,8 @@ h1{
 #hero{
     background-color: var(--mustard);
     height: 250px;
-        align-items: center;
-
+    align-items: center;
+    justify-content: center;
 }
 
 #hero>div{
@@ -145,11 +154,21 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1000px;
+    margin: auto
 }
 
 h2{
+    font-family: var(--roboto);
     font-weight: 700;
-    font-size: 24px;    
+    font-size: 24px;
+    vertical-align: middle;
+  
+}
+
+#indications div{
+    flex-direction: column;
+    align-items: center;
 }
 
 #indications article{
@@ -180,4 +199,118 @@ h2{
     left: -10px;
     height: 25px;
     line-height: 10px;
+}
+
+#professionnals img{
+    width: 90vw;
+    max-width: 465px;
+    border-radius: 20px 20px 0px 0px;
+    height: 165px;
+    object-fit: cover;
+}
+
+#professionnals{
+    background-color: var(--mustard);
+    padding: 40px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#professionnals h3{
+    font-size: 18px;
+}
+
+#professionnals article div p{
+    color: var(--dark);
+}
+
+#professionnals>div{
+    flex-wrap: wrap;
+    max-width: 970px;
+    margin: auto;
+}
+
+#professionnals>div>div{
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+#professionnals article {
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 90vw;
+    max-width: 465px;
+}
+
+#professionnals article div{
+    border-bottom: 1px solid var(--orange);
+    padding-bottom: 10px;
+}
+
+#professionnals article div, #professionnals article form{
+    margin: 10px ;
+}
+
+#professionnals form{
+    justify-content: space-between;
+    position: relative;
+}
+
+#professionnals a:hover {
+    color: var(--black);
+}
+
+#professionnals h2{
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+#professionnals .CTA{
+    margin: 30px 0px;
+}
+
+input[type="checkbox"]{
+    opacity: 0  ;
+    cursor: pointer;
+}
+
+input[type="checkbox"] ~ .imgThumbCheck{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .imgThumbUncheck {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .imgThumbCheck {
+    display: inline;
+}
+
+#professionnals  .imgThumbCheck,#professionnals  .imgThumbUncheck{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+}
+
+@media screen  and (min-width: 1024px){
+    header .fa-sharp, header .fa-solid, header .fa-bars{
+        display:none;
+
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    nav ul{
+        gap: 40px;
+    }
+     nav ul li {
+        color: var(--dark);
+
+     }
 }
