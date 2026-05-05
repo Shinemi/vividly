@@ -63,7 +63,7 @@ header .logo:hover{
 
 nav{
     display: none;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 header i{
@@ -125,7 +125,7 @@ h1{
 }
 
 .CTA{
-    padding: 10px;
+    padding: 10px 20px;
     width: fit-content;
     border-radius: 30px;
     border: none;
