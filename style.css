@@ -351,3 +351,29 @@ input[type="checkbox"]:checked ~ .imgThumbCheck {
         transform: none;
      }
 }
+
+
+.container-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mustard);
+    z-index: 9999;
+    animation: m2 0s forwards 2.5s;
+    
+    .loader {
+        width: 200px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 20px solid var(--white);
+        border-right-color: var(--orange);
+        animation: l2 1s linear  infinite forwards;
+    }
+}
+@keyframes l2 {to{transform: rotate(1turn);}}
+@keyframes m2 {to{opacity: 0;visibility: hidden;}}
